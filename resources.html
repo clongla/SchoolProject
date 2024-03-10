@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to Cameroon</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Get to know about Cameroon. Discover the wonderful physical environment, geographical relief features, and human and economic activities in the country cameroon.
+Book a tour and get to meet with the wonderful indigenes of this remote region, Cameroon. Try out Cameroonian dishes and browse through the gallery of Cameroonian art and culture. You can buy a craft 
+if you so pelase.">
+<link href="cameroon.css" rel="stylesheet">
+<script>
+  // Function to validate phone number format
+  function validatePhoneNumber() {
+    var phoneNumber = document.getElementById("myPhone").value;
+    var phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      alert("Please enter phone number in xxx-xxx-xxxx format only");
+      return false;
+    }
+    return true;
+  }
+</script>
+</head>
+<body>
+<header>
+  <nav>
+    <img src="Pngtree.png" class="logo" alt="Logo">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a> </li> 
+        <li><a href="about.html">About</a> </li>
+        <li><a href="tourism.html">Gallery</a> </li>
+        <li><a href="cuisine.html">Cuisine</a> </li>
+        <li><a href="resources.html">Resources</a> </li>
+        <li><a href="shop.html">Shop</a> </li>
+    </ul>
+    <a href="resources.html" class="register-btn">Book tour</a>
+  </nav>
+</header><br>
+
+<div id="wrapper">
+<main>
+  <h2>Contact Information</h2>
+ <ul>
+  <li>E-mail: 
+  <a href="clongla@ivytech.edu">clongla@ivytech.edu</a>
+  </li>
+  <li>Phone: +(237) 555-555-5555</li>
+</ul><br>
+ <h2>Book a Tour</h2>
+ <p>Required fields are marked with an asterisk*</p>
+    <form method="post" action="https://formsubmit.co/clongla@ivytech.edu" class="contact-form" onsubmit="return validatePhoneNumber()" >
+      <input type="hidden" name="_next" value="https://clongla.github.io/SDEV153-B2B-spring24/chapter3/CameroonProject/resources.html">
+        <label for="myFName">*First Name:</label>
+        <input type="text" name="myFName" id="myFName" required placeholder="your first name">
+        <label for="myLName">*Last Name:</label>
+        <input type="text" name="myLName" id="myLName" required placeholder="your last name">
+        <label for="myAddress">*Address:</label>
+        <input type="text" name="myAddress" id="myAddress" required placeholder="your Address" >
+        <label for="myCity">*City:</label>
+        <input type="text" name="myCity" id="myCity" required placeholder="your City" >
+        <label for="myState">*State:</label>
+        <input type="text" name="myState" id="myState" required placeholder="your State" minlength="2" maxlength="2">
+        <label for="myCode">*Zip Code:</label>
+        <input type="text" name="myCode" id="myCode" required placeholder="your Zip Code" minlength="5" maxlength="5">
+        <label for="myEmail">*E-mail:</label>
+        <input type="text" name="myEmail" id="myEmail" required placeholder="your E-mail" >
+        <label for="myPhone">*Phone:</label>
+        <input type="text" name="myPhone" id="myPhone" required placeholder="your Phone" >
+        <label for="myDate">When are you planning to visit?</label>
+        <input type="date" name="myDate" id="myDate">
+        <label for="myPeople">How many people are in your group?</label>
+        <input type="number" name="myPeople" id="myPeople" min="1" max="25"> 
+        <label for="myOther">Any other thing we need to be aware of?</label>
+        <textarea name="myOther" id="myOther" rows="2" cols="20"></textarea>
+        <label for="myComments">*Comments:</label>
+        <textarea name="myComments" id="myComments" rows="2" cols="20" required ></textarea>
+        <input type="submit" value="Submit">
+      </form>
+</main><br><br>
+
+<h2>Online Resources</h2>
+ <h3>FAQs</h3>
+ <p></p>
+ <h3>Useful Links</h3>
+ <p>A <a href="https://www.youtube.com/watch?v=GGmqYQWeqSQ">Documentary</a> about Cameroon</p>
+<br><br>
+</div>
+<footer>
+  <small><i>Copyright @ 2024 Welcome to Cameroon</i></small>
+  <p>Contact us <a href="contact.html">here</a> &nbsp; </p>
+</footer><br>
+</body>
+</html>
+
+
+
+
+
